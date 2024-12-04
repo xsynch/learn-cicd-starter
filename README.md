@@ -1,4 +1,4 @@
-![alt text goes here][(IMAGE_URL](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg))
+![dynamic image](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE>/badge.svg)
 
 # learn-cicd-starter (Notely)
 
