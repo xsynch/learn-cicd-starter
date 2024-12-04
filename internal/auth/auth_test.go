@@ -33,7 +33,7 @@ func TestAuthFailure(t *testing.T){
 	expected := ErrNoAuthHeaderIncluded
 	val, err := GetAPIKey(req.Header)
 
-	if expected == err {
+	if expected != err {
 		t.Errorf("unexpected reuturn: got %v want %v",val, expected)
 	}
 	
