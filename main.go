@@ -95,8 +95,3 @@ func main() {
 	log.Printf("Serving on port: %s\n", port)
 	log.Fatal(srv.ListenAndServe())
 }
-
-func unused() {
-	//this doesn't do anything
-	//and not called from anywhere
-}
