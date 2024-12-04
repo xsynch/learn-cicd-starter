@@ -1,7 +1,6 @@
 package auth
 
 import (
-	"fmt"
 	"net/http"
 
 	"testing"
@@ -14,10 +13,8 @@ func TestAuth(t *testing.T) {
 	req.Header.Set("Authorization", "ApiKey thisisatest")
 
 	expected := "thisisatest"
-	val, err := GetAPIKey(req.Header)
-	if err != nil {
-		fmt.Errorf("Error was returned: %s", err)
-	}
+	val, _ := GetAPIKey(req.Header)
+
 	if expected != val {
 		t.Errorf("unexpected reuturn: got %v want %v", val, expected)
 	}
